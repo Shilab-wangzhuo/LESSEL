@@ -1,0 +1,4 @@
+/tests/
+tools/Step2_YOLOX/YOLOX/YOLOX_weights/best_ckpt.pth
+process_local.bat
+

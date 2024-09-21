@@ -50,7 +50,7 @@ def make_parser():
         type=str,
         help="please input your experiment description file",
     )
-    parser.add_argument("-c", "--ckpt", default='tools/Step2_YOLOX/YOLOXYOLOX_outputs/yolox_voc_s/best_ckpt.pth', type=str, help="ckpt for eval")
+    parser.add_argument("-c", "--ckpt", default='tools/Step2_YOLOX/YOLOX/YOLOX_weights/best_ckpt.pth', type=str, help="ckpt for eval")
     parser.add_argument(
         "--device",
         default="cpu",
