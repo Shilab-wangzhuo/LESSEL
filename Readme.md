@@ -24,6 +24,7 @@ References:
 cd tools/Step2_YOLOX/YOLOX
 pip install -v -e .
 
+tar -xf tools/Step4_qc/EfficientNet-PyTorch.zip -C tools/Step4_qc/EfficientNet-PyTorch
 cd tools/Step4_qc/EfficientNet-PyTorch
 pip install efficientnet_pytorch
 ```
