@@ -17,8 +17,8 @@ pip install -r requirements.txt
 
 References:
 - YOLOX-->[https://github.com/Megvii-BaseDetection/YOLOX](https://github.com/Megvii-BaseDetection/YOLOX)
-- EfficientNet-->[https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-downloads)
-- UNet-->[https://github.com/Megvii-BaseDetection/YOLOX](https://github.com/Megvii-BaseDetection/YOLOX)
+- EfficientNet-->[https://github.com/lukemelas/EfficientNet-PyTorch](https://github.com/lukemelas/EfficientNet-PyTorch)
+- UNet-->[https://github.com/milesial/Pytorch-UNet](https://github.com/milesial/Pytorch-UNet)
 
 ```bash
 cd tools/Step2_YOLOX/YOLOX
