@@ -1,0 +1,139 @@
+{
+    "image_height": 1024,
+    "images_width": 1024,
+    "images_path": "tile_50_55.png",
+    "bboxes": [
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 0,
+            "label": "Single_cell",
+            "x_max": 0.4736328125,
+            "x_min": 0.37890625,
+            "y_max": 0.552734375,
+            "y_min": 0.4482421875,
+            "prob": "0.799"
+        },
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 1,
+            "label": "Single_cell",
+            "x_max": 0.22265625,
+            "x_min": 0.1533203125,
+            "y_max": 0.36328125,
+            "y_min": 0.287109375,
+            "prob": "0.715"
+        },
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 2,
+            "label": "Single_cell",
+            "x_max": 0.3984375,
+            "x_min": 0.3427734375,
+            "y_max": 0.8466796875,
+            "y_min": 0.796875,
+            "prob": "0.706"
+        },
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 3,
+            "label": "Single_cell",
+            "x_max": 0.1845703125,
+            "x_min": 0.1298828125,
+            "y_max": 0.51171875,
+            "y_min": 0.4580078125,
+            "prob": "0.699"
+        },
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 4,
+            "label": "Single_cell",
+            "x_max": 0.8134765625,
+            "x_min": 0.7578125,
+            "y_max": 0.5625,
+            "y_min": 0.5078125,
+            "prob": "0.658"
+        },
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 5,
+            "label": "Single_cell",
+            "x_max": 0.693359375,
+            "x_min": 0.640625,
+            "y_max": 0.1982421875,
+            "y_min": 0.1474609375,
+            "prob": "0.620"
+        },
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 6,
+            "label": "Single_cell",
+            "x_max": 0.197265625,
+            "x_min": 0.1201171875,
+            "y_max": 0.333984375,
+            "y_min": 0.26171875,
+            "prob": "0.615"
+        },
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 7,
+            "label": "Single_cell",
+            "x_max": 0.783203125,
+            "x_min": 0.751953125,
+            "y_max": 0.05859375,
+            "y_min": 0.013671875,
+            "prob": "0.569"
+        },
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 8,
+            "label": "Single_cell",
+            "x_max": 0.736328125,
+            "x_min": 0.6923828125,
+            "y_max": 0.064453125,
+            "y_min": 0.017578125,
+            "prob": "0.548"
+        },
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 9,
+            "label": "Single_cell",
+            "x_max": 0.5966796875,
+            "x_min": 0.5615234375,
+            "y_max": 0.2412109375,
+            "y_min": 0.20703125,
+            "prob": "0.456"
+        },
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 10,
+            "label": "Single_cell",
+            "x_max": 0.580078125,
+            "x_min": 0.53515625,
+            "y_max": 0.2626953125,
+            "y_min": 0.220703125,
+            "prob": "0.349"
+        }
+    ]
+}

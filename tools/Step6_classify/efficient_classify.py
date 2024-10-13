@@ -1,3 +1,4 @@
+
 import os
 import cv2
 import argparse
@@ -19,8 +20,8 @@ def make_parser():
     parser.add_argument("--ori_img_dir",type=str,default=None)
     parser.add_argument("--threshold_B",type=float,default=0.97)
     parser.add_argument("--threshold_S",type=float,default=0.9)
-    parser.add_argument("--weightB",type=str,default="F:tools/Step6_classify/weights/weightB/0804_1338/Epoch32.pth",help="model path")
-    parser.add_argument("--weightS",type=str,default="F:tools/Step6_classify/weights/weightS/0803_1049/Epoch30.pth",help="model path")
+    parser.add_argument("--weightB",type=str,default="tools/Step6_classify/weights/weightB/0804_1338/Epoch32.pth",help="large-cell model path")
+    parser.add_argument("--weightS",type=str,default="tools/Step6_classify/weights/weightS/0803_1049/Epoch30.pth",help="small-cell model path")
     parser.add_argument("--imgszB",type=int,default=224,help="test image size")
     parser.add_argument("--imgszS",type=int,default=90,help="test image size")
     # opt=parser.parse_known_args()[0]

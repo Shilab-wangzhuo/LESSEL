@@ -1,4 +1,19 @@
 /tests/
 tools/Step2_YOLOX/YOLOX/YOLOX_weights/best_ckpt.pth
 process_local.bat
+/tools/Step6_classify/weights/weightB/0804_1338/
+/tools/Step6_classify/weights/weightS/0803_1049/
+/code/
+/demo/*
+!/demo/negative/
+/demo/negative/*
+!/demo/negative/C202401364
+!/demo/negative/C202401364.svs
+!/demo/positive/
+/demo/positive/*
+!/demo/positive/C202366603
+!/demo/positive/C202366603.svs
+
+
+
 
