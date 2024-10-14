@@ -35,12 +35,12 @@ pip install efficientnet_pytorch
 
 - Download the yolox-x pre-trained model and put the folder in "tools\Step2_YOLOX\YOLOX\YOLOX_weights"
 
-[https://1drv.ms/f/c/194ecbbe03b12717/EsPvowajTnRJtxs7KCSsBhEBL58k-0rNUXW7hICLGnH_-A?e=gM5ExA](https://1drv.ms/f/c/194ecbbe03b12717/EsPvowajTnRJtxs7KCSsBhEBL58k-0rNUXW7hICLGnH_-A?e=gM5ExA)
+[https://1drv.ms/u/c/194ecbbe03b12717/EYqb1VjNxBNDjgWfqT__PP8BBf7OKnYgj2iFBgOiz-L56g?e=xbqGAk](https://1drv.ms/u/c/194ecbbe03b12717/EYqb1VjNxBNDjgWfqT__PP8BBf7OKnYgj2iFBgOiz-L56g?e=xbqGAk)
 
 
 - Download the Unet pre-trained model and put the folder in "tools\Step5_cut\Pytorch-UNet-master\checkpoints"
 
-[https://1drv.ms/f/c/194ecbbe03b12717/EvP2fynFlkhJlKY0dyD1Gz8Bl4V4X858KBu7sUZtWKhudw?e=of8pnI](https://1drv.ms/f/c/194ecbbe03b12717/EvP2fynFlkhJlKY0dyD1Gz8Bl4V4X858KBu7sUZtWKhudw?e=of8pnI)
+[https://1drv.ms/u/c/194ecbbe03b12717/ES4G-bKiHttKsNPzAbeMXcEBngpmwenAAegtcBKlTzeJuw?e=O7Gdbx](https://1drv.ms/u/c/194ecbbe03b12717/ES4G-bKiHttKsNPzAbeMXcEBngpmwenAAegtcBKlTzeJuw?e=O7Gdbx)
 
 
 2. Training classification model
