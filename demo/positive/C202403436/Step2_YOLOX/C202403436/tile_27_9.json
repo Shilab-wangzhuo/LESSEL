@@ -1,0 +1,67 @@
+{
+    "image_height": 1024,
+    "images_width": 1024,
+    "images_path": "tile_27_9.png",
+    "bboxes": [
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 0,
+            "label": "Single_cell",
+            "x_max": 0.701171875,
+            "x_min": 0.6259765625,
+            "y_max": 0.12890625,
+            "y_min": 0.025390625,
+            "prob": "0.804"
+        },
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 1,
+            "label": "Single_cell",
+            "x_max": 0.1953125,
+            "x_min": 0.0859375,
+            "y_max": 1.0,
+            "y_min": 0.8876953125,
+            "prob": "0.733"
+        },
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 2,
+            "label": "Single_cell",
+            "x_max": 0.9658203125,
+            "x_min": 0.8505859375,
+            "y_max": 0.998046875,
+            "y_min": 0.927734375,
+            "prob": "0.733"
+        },
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 3,
+            "label": "Single_cell",
+            "x_max": 0.986328125,
+            "x_min": 0.9609375,
+            "y_max": 0.158203125,
+            "y_min": 0.1123046875,
+            "prob": "0.596"
+        },
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 4,
+            "label": "Single_cell",
+            "x_max": 0.935546875,
+            "x_min": 0.880859375,
+            "y_max": 0.1845703125,
+            "y_min": 0.1357421875,
+            "prob": "0.589"
+        }
+    ]
+}

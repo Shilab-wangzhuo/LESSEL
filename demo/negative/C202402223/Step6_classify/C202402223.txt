@@ -1,0 +1,8 @@
+image path：F:\neg_train_dataset_svs\Step3\qc_0714\C202402223\cut_out\json_cut_out
+weightB：F:\efficientNet\classify2_iteration\iteration_SNV\iteration4\weightB\0804_1338\Epoch32.pth
+threshold_B:0.97
+weightS：F:\efficientNet\classify2_iteration\iteration_SNV\iteration4\weightS\0803_1049\Epoch30.pth
+threshold_S:0.9
+Image:	pred:	prob：	img_type:
+0.6113_good_tile_43_35_23.png	cancer	0.9526805877685547	Small
+big_cancer=0	small_cancer=1	big=9321	small=12105	total=21426

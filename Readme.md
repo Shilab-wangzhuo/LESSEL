@@ -116,7 +116,7 @@ process.bat -i /your/input/svs_file/path -o /output/folder
 
 ## Demo
 
-We present partial results of 2 samples in the `demo` (including one positive samples and one negative samples).
+We present partial results of eight samples in the `demo` (including four positive samples and four negative samples).
 
 The input file format and the output directory structure are shown as follows.
 ```  

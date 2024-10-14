@@ -1,0 +1,31 @@
+{
+    "image_height": 1024,
+    "images_width": 1024,
+    "images_path": "tile_38_16.png",
+    "bboxes": [
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 0,
+            "label": "Single_cell",
+            "x_max": 0.287109375,
+            "x_min": 0.1923828125,
+            "y_max": 0.896484375,
+            "y_min": 0.7685546875,
+            "prob": "0.833"
+        },
+        {
+            "attributions": {
+                "group": 0
+            },
+            "id": 1,
+            "label": "Single_cell",
+            "x_max": 1.001953125,
+            "x_min": 0.77734375,
+            "y_max": 0.5771484375,
+            "y_min": 0.3408203125,
+            "prob": "0.787"
+        }
+    ]
+}
