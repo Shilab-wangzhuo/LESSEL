@@ -7,7 +7,7 @@ process_local.bat
 /demo/negative/*.svs
 /demo/positive/*.svs
 /demo/positive/*.zip
-
+/demo/id_project.txt
 
 
 

@@ -86,22 +86,22 @@ def make_parser():
 
 ```bash
 # Step 1: Split the whole slide images (WSIs) into non-overlapping patches of 1024×1024 pixels.
-python tools\Step1_slide\svs_slide.py -i C202401364.svs -o /output_dir/Step1_slide 
+python tools/Step1_slide/svs_slide.py -i N1.svs -o /output_dir/Step1_slide 
 
 # Step 2: Utilize the YOLOX network to detect single cells within the patch-level images.
-python tools\Step2_YOLOX\YOLOX\tools\demo1.py image -n yolox-x -c tools\Step2_YOLOX\YOLOX\YOLOX_weights\best_ckpt.pth --path /output_dir/Step1_slide/C202401364 --save_dir /output_dir/Step2_YOLOX --conf 0.3 --nms 0.5 --tsize 1024 --save_result --device gpu
+python tools/Step2_YOLOX/YOLOX/tools/demo1.py image -n yolox-x -c tools/Step2_YOLOX/YOLOX/YOLOX_weights/best_ckpt.pth --path /output_dir/Step1_slide/N1 --save_dir /output_dir/Step2_YOLOX --conf 0.3 --nms 0.5 --tsize 1024 --save_result --device gpu
 
 # Step 3: Extract single-cell images from the patch-level images based on the detection results of the YOLOX model.
-python tools\Step3_sc_slide\sc_slide.py /output_dir/Step2_YOLOX/C202401364 /output_dir/Step1_slide/C202401364 /output_dir/Step3_sc_slide
+python tools/Step3_sc_slide/sc_slide.py /output_dir/Step2_YOLOX/N1/output_dir/Step1_slide/N1/output_dir/Step3_sc_slide
 
 # Step 4: Remove blurry cells, incomplete cells, cell fragments, multicellular clusters, impurities, and cell nuclei.
-python tools\Step4_qc\QC.py --test_dir /output_dir/Step3_sc_slide/C202401364  --save_dir /output_dir/Step4_qc/C202401364 
+python tools/Step4_qc/QC.py --test_dir /output_dir/Step3_sc_slide/N1  --save_dir /output_dir/Step4_qc/N1 
 
 # Step 5: Segment cells from the background in the single-cell images to effectively reduce background interference.
-python tools\Step5_cut\Pytorch-UNet-master\predict.py -i /output_dir/Step4_qc/C202401364 -o  /output_dir/Step5_cut
+python tools/Step5_cut/Pytorch-UNet-master/predict.py -i /output_dir/Step4_qc/N1 -o  /output_dir/Step5_cut
 
 # Step 6: Classify whether the cell is benign or malignant.
-python tools\Step6_classify\efficient_classify.py --test_dir /output_dir/Step5_cut/C202401364/json_cut_out   --save_dir /output_dir/Step6_classify/C202401364 --ori_img_dir /output_dir/Step4_qc/C202401364 
+python tools/Step6_classify/efficient_classify.py --test_dir /output_dir/Step5_cut/N1/json_cut_out   --save_dir /output_dir/Step6_classify/N1 --ori_img_dir /output_dir/Step4_qc/N1 
 
 ```
 
@@ -120,30 +120,30 @@ We present partial results of eight samples in the `demo` (including four positi
 
 The input file format and the output directory structure are shown as follows.
 ```  
-Input file: C202401364.svs
+Input file: N1.svs
 
 Output directory structure:
 
-    -- C202401364   
+    -- N1   
         - Step1_slide   
-            - C202401364             # Non-overlapping patches of 1024×1024 pixels.
+            - N1             # Non-overlapping patches of 1024×1024 pixels.
         - Step2_YOLOX
-            - C202401364             # YOLOX model results.
+            - N1             # YOLOX model results.
         - Step3_sc_slide
-            - C202401364             # Single-cell images.
+            - N1             # Single-cell images.
         - Step4_qc
-            - C202401364             # High-quality single-cell images.
-            - C202401364.txt         # Probability values for each cell given by the QC model.
+            - N1             # High-quality single-cell images.
+            - N1.txt         # Probability values for each cell given by the QC model.
         - Step5_cut
-            - C202401364
+            - N1
                 - json               # JSON files for each single-cell image.
                 - json_cut_out       # High-quality single-cell images with the background removed.
                 - vis                # Masks of single-cell images.
         - Step6_classify   
-            - C202401364
+            - N1
                 - cancer             # Cell images identified as malignant (background removed).
                 - cancer_ori         # Cell images identified as malignant (with backgroung).
-            - C202401364.txt         # Malignancy probability values for each cell given by the binary classification model.
+            - N1.txt         # Malignancy probability values for each cell given by the binary classification model.
 ```
 
 **Note: Due to the large number of image files, we only retained the results of five patch-level images in Steps 1 through 5. The results of Step 6 cover the entire WSI.**
